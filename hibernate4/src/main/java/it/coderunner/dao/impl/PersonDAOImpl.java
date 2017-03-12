@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import it.coderunner.dao.PersonDAO;
 import it.coderunner.model.Person;
 
-@Repository
+@Repository // tworzy dao
 public class PersonDAOImpl implements PersonDAO {
 
 	private SessionFactory sessionFactory;

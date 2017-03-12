@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+@Entity  // adnotacja dla hiberneta o stworzenie tabeli
 @Table(name = "PERSON")
 public class Person {
 
@@ -16,6 +16,7 @@ public class Person {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
+	@Column(name="User_name") // w BD nie uzywamy CamelCase
 	private String name;
 
 	private String country;
